@@ -73,4 +73,8 @@ calculus) 25^0.5
 calculus) 5+5*2/4-2^2
 3.5
 ```
+To exit the program.
+```
+calculus) quit
+```
 
