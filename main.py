@@ -70,28 +70,49 @@ def parse(calculus):
 
     return numbers + operators
 
+# ------------------------------------------------------------------------------
+
+def verify_equality(calc1, calc2):
+    res_calc1 = str(eval_(parse(calc1)))
+    res_calc2 = str(eval_(parse(calc2)))
+
+    return True if res_calc1 == res_calc2 else False
 
 # ------------------------------------------------------------------------------
 
 
 def run():
-    print("calculus - calculator written in Python by mortim\n")
+    print("calculus - calculator written in Python by mortim")
+    print("Type quit to exit.\n")
         
     n = input("calculus) ")
 
     while n != "quit":
         calc = shlex.shlex(n, punctuation_chars=True)
-        calc.wordchars = calc.wordchars.replace("-", "").replace("/", "").replace("*", "")
+        calc.wordchars = calc.wordchars.replace("-", "").replace("/", "").replace("*", "").replace("=", "")
         l_calc = list(calc)
 
         if l_calc[:1] == ['-']:
             l_calc.pop(0)
             l_calc[0] = "-"+l_calc[0]
 
-        parsed = parse(l_calc)
-        evaluated = eval_(parsed)
+        if "=" in l_calc:
+            expr = "".join(l_calc).split("=")
 
-        print(evaluated)
+            calculus1 = shlex.shlex(expr[0], punctuation_chars=True)
+            calculus1.wordchars = calculus1.wordchars.replace("-", "").replace("/", "").replace("*", "").replace("=", "")
+
+            calculus2 = shlex.shlex(expr[1], punctuation_chars=True)
+            calculus2.wordchars = calculus1.wordchars.replace("-", "").replace("/", "").replace("*", "").replace("=", "")
+
+            print(verify_equality(list(calculus1), list(calculus2)))
+            
+        else:
+            parsed = parse(l_calc)
+            evaluated = eval_(parsed)
+            print(evaluated)
+
+
         n = input("calculus) ")
 
 

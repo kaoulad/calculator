@@ -78,3 +78,18 @@ To exit the program.
 calculus) quit
 ```
 
+**Verify equality of expression**
+```
+calculus) 10^2+3=10^2+3
+True
+```
+```
+calculus) 5=10
+False
+```
+
+```
+calculus) 50*2/5=895
+False
+```
+
