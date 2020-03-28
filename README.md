@@ -93,3 +93,8 @@ calculus) 50*2/5=895
 False
 ```
 
+*Pythagorean triplet*
+```
+calculus) 3^2+4^2=5^2
+True
+```
