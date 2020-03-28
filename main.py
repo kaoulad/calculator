@@ -1,5 +1,6 @@
 import sys
 import shlex
+from decimal import Decimal
 
 def isfloat(n):
     try:
@@ -13,8 +14,6 @@ def isfloat(n):
 def eval_(parsed):
     stack = []
 
-
-
     for x in parsed:
         if x.isnumeric() or isfloat(x):
             stack.append(x)
@@ -22,9 +21,9 @@ def eval_(parsed):
             remainder = stack[-2:]
             del stack[-2:]
             if x == "^":
-                result = eval(str(remainder[0]) + "**" + str(remainder[1]))
+                result = eval(repr(Decimal(remainder[0])) + "**" + repr(Decimal(remainder[1])))
             else:
-                result = eval(str(remainder[0]) + str(x) + str(remainder[1]))
+                result = eval(repr(Decimal(remainder[0])) + str(x) + repr(Decimal(remainder[1])))
             stack.append(result)
     
     return stack[0]
