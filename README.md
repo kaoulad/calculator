@@ -98,3 +98,15 @@ False
 calculus) 3^2+4^2=5^2
 True
 ```
+
+*Verify if expression1 are greater than expression2*
+```
+calculus) 2*10+3>1785
+False
+```
+
+*Verify if expression are less than expression2*
+```
+calculus) 7/4+3^2<5^2+6
+True
+```

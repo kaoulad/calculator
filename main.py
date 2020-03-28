@@ -79,6 +79,21 @@ def verify_equality(calc1, calc2):
 
 # ------------------------------------------------------------------------------
 
+def verify_greater_than(calc1, calc2):
+    res_calc1 = float(eval_(parse(calc1)))
+    res_calc2 = float(eval_(parse(calc2)))
+
+    return True if res_calc1 > res_calc2 else False
+
+# ------------------------------------------------------------------------------
+
+def verify_less_than(calc1, calc2):
+    res_calc1 = float(eval_(parse(calc1)))
+    res_calc2 = float(eval_(parse(calc2)))
+
+    return True if res_calc1 < res_calc2 else False
+
+# ------------------------------------------------------------------------------
 
 def run():
     print("calculus - calculator written in Python by mortim")
@@ -102,9 +117,31 @@ def run():
             calculus1.wordchars = calculus1.wordchars.replace("-", "").replace("/", "").replace("*", "").replace("=", "")
 
             calculus2 = shlex.shlex(expr[1], punctuation_chars=True)
-            calculus2.wordchars = calculus1.wordchars.replace("-", "").replace("/", "").replace("*", "").replace("=", "")
+            calculus2.wordchars = calculus2.wordchars.replace("-", "").replace("/", "").replace("*", "").replace("=", "")
 
             print(verify_equality(list(calculus1), list(calculus2)))
+
+        elif ">" in l_calc:
+            expr = "".join(l_calc).split(">")
+
+            calculus1 = shlex.shlex(expr[0], punctuation_chars=True)
+            calculus1.wordchars = calculus1.wordchars.replace("-", "").replace("/", "").replace("*", "").replace("=", "")
+
+            calculus2 = shlex.shlex(expr[1], punctuation_chars=True)
+            calculus2.wordchars = calculus2.wordchars.replace("-", "").replace("/", "").replace("*", "").replace("=", "")
+            
+            print(verify_greater_than(list(calculus1), list(calculus2)))
+
+        elif "<" in l_calc:
+            expr = "".join(l_calc).split("<")
+
+            calculus1 = shlex.shlex(expr[0], punctuation_chars=True)
+            calculus1.wordchars = calculus1.wordchars.replace("-", "").replace("/", "").replace("*", "")
+
+            calculus2 = shlex.shlex(expr[1], punctuation_chars=True)
+            calculus2.wordchars = calculus2.wordchars.replace("-", "").replace("/", "").replace("*", "")
+            
+            print(verify_less_than(list(calculus1), list(calculus2)))
             
         else:
             parsed = parse(l_calc)
