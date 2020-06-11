@@ -23,13 +23,13 @@ RPN: 5 6 + (postfix)
 
 This function parses to get reverse polish notation
 ```py
-parsed = parse(l_calc)
+parse(l_calc)
 ```
 
 And thanks to reverse polish notation, the program can easily evaluate mathematical expression.
 
 ```py
-evaluated = eval_(parsed)
+eval_(parsed)
 ```
 
 ## Examples
