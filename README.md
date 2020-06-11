@@ -27,7 +27,7 @@ parse(l_calc)
 And thanks to reverse polish notation, the program can easily evaluate mathematical expression.
 
 ```py
-eval_(parsed)
+eval_(parse(l_calc))
 ```
 
 ## Examples
