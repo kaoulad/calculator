@@ -5,8 +5,6 @@ Basic calculator written in Python using Shunting-yard algorithm.
 ### Pre-requiste
 - python (> 3)
 
-*This program might get few calculus errors*
-
 ```
 python main.py
 ```
