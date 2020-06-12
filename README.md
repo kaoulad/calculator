@@ -68,8 +68,8 @@ calculus) 25^0.5
 ```
 **Mixed**
 ```
-calculus) 5+5*2/4-2^2
-3.5
+calculus) (5+5*2/4-2)^2
+30.25
 ```
 To exit the program.
 ```
