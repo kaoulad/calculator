@@ -1,6 +1,6 @@
 import shlex
 from prompt_toolkit import PromptSession
-import calculus_utils as cu
+import calculus as cu
 
 def run():
     print("calculus - calculator written in Python by mortim")
@@ -12,9 +12,8 @@ def run():
     while n != "quit":
         calc = shlex.shlex(n, punctuation_chars=True)
         calc.wordchars = calc.wordchars.replace("-", "").replace("/", "").replace("*", "")
-        l_calc = list(calc)
         # -------------------------------
-        print(cu.eval_(cu.parse(l_calc)))
+        print(cu.eval_(cu.parse(calc)))
         n = session.prompt("calculus) ")
 
 
