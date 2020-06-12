@@ -1,6 +1,5 @@
 import shlex
 import sys
-from fractions import Fraction
 
 # ------------------------------------------------------------------------------
 #                         Util Function
