@@ -19,7 +19,7 @@ def isnumber(n):
 
 def eval_(parsed):
     stack = []
-
+    
     for x in parsed:
         if isnumber(x):
             stack.append(x)
@@ -30,6 +30,7 @@ def eval_(parsed):
                 result = eval(str(remainder[0]) + "**" + str(remainder[1]))
             else:
                 result = eval(str(remainder[0]) + str(x) + str(remainder[1]))
+
             stack.append(result)
 
     return stack[0]
@@ -62,7 +63,6 @@ def last_element(l):
 
 def parse(expr):
     _OPERATORS = ['+', '-', '*', '/', '^']
-    element    = 0
     stack      = []
     res        = []
 
