@@ -1,4 +1,4 @@
-import shlex
+from shlex import shlex
 from prompt_toolkit import PromptSession
 import calculus as cu
 
@@ -10,10 +10,14 @@ def run():
     n = session.prompt("calculus) ")
 
     while n != "quit":
-        calc = shlex.shlex(n, punctuation_chars=True)
+        calc = shlex(cu.parenthesis(n), punctuation_chars=True)
         calc.wordchars = calc.wordchars.replace("-", "").replace("/", "").replace("*", "")
         # -------------------------------
-        print(cu.eval_(cu.parse(calc)))
+        try: 
+            print(cu.eval_(cu.parse(calc)))
+        except:
+            print("calculus cannot evaluate this expression.")
+        
         n = session.prompt("calculus) ")
 
 
