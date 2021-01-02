@@ -42,7 +42,7 @@ eval_(parse(l_calc))
 
 ### Commands
 - [ ] [Exit program](#exit)
-- [ ] [Calculus history](#history)
+- [ ] [sy history](#history)
 - [ ] [Clear Input](#clear)
 
 ---
@@ -52,7 +52,7 @@ eval_(parse(l_calc))
 
 **Addition**
 ```
-calculus) 5+7+4
+sy) 5+7+4
 16
 ```
 </div>
@@ -63,18 +63,18 @@ calculus) 5+7+4
 
 **Substraction**
 ```
-calculus) 10-20-40
+sy) 10-20-40
 -50
 ```
 </div>
 
 ---
 
-<div id ="multiplication">
+<div id="multiplication">
 
 **Multiplication**
 ```
-calculus) 5*2*3
+sy) 5*2*3
 30
 ```
 </div>
@@ -85,7 +85,7 @@ calculus) 5*2*3
 
 **Division**
 ```
-calculus) 100/10
+sy) 100/10
 10.0
 ```
 </div>
@@ -96,19 +96,19 @@ calculus) 100/10
 
 **Squared**
 ```
-calculus) 5^2
+sy) 5^2
 25
 ```
 
 **Cubed**
 ```
-calculus) 10^3
+sy) 10^3
 1000
 ```
 
 **Root square**
 ```
-calculus) 25^0.5
+sy) 25^0.5
 5.0
 ```
 
@@ -120,7 +120,7 @@ calculus) 25^0.5
 
 **Mixed**
 ```
-calculus) (5+5*2/4-2)^2
+sy) (5+5*2/4-2)^2
 30.25
 ```
 </div>
@@ -133,7 +133,7 @@ calculus) (5+5*2/4-2)^2
 
 To exit the program.
 ```
-calculus) quit
+sy) quit
 ```
 
 </div>
@@ -142,24 +142,24 @@ calculus) quit
 
 <div id="history">
 
-Go back to a old calculus with up arrow key.
+Go back to an old calculus with up arrow key.
 ```
-calculus) (10+3)*2
+sy) (10+3)*2
 26
-calculus) 6*2+3
+sy) 6*2+3
 15
-calculus) 6*2+3 (up arrow key)
+sy) 6*2+3 (up arrow key)
 ```
 
 Or go back to a recent calculus with bottom arrow key.
 ```
-calculus) (10+3)*2
+sy) (10+3)*2
 26
-calculus) 6*2+3
+sy) 6*2+3
 15
-calculus) 6*2+3     (up arrow key)
-calculus) (10+3)*2  (up arrow key)
-calculus) 6*2+3     (bottom arrow key)
+sy) 6*2+3     (up arrow key)
+sy) (10+3)*2  (up arrow key)
+sy) 6*2+3     (bottom arrow key)
 ```
 
 </div>
@@ -170,15 +170,15 @@ calculus) 6*2+3     (bottom arrow key)
 You can clear input with CTRL+L key.
 
 ```
-calculus) (10+3)*2
+sy) (10+3)*2
 26
-calculus) 6*2+3
+sy) 6*2+3
 15
 ```
 
 (With CTRL+L)
 ```
-calculus)
+sy)
 ```
 
 
