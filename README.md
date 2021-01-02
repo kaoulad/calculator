@@ -1,4 +1,4 @@
-# calculus
+# sy
 
 Basic calculator written in Python using Shunting-yard algorithm.
 
