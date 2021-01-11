@@ -1,24 +1,24 @@
 from shlex import shlex
 from prompt_toolkit import PromptSession
-import sy
+import calculator
 
 def run():
-    print("sy - An elegant calculator written in Python")
+    print("calculator - An elegant calculator written in Python")
     print("Type quit to exit.\n")
     session = PromptSession()
         
-    n = session.prompt("sy) ")
+    n = session.prompt("> ")
 
     while n != "quit":
-        calc = shlex(sy.parenthesis(n), punctuation_chars=True)
+        calc = shlex(calculator.parenthesis(n), punctuation_chars=True)
         calc.wordchars = calc.wordchars.replace("-", "").replace("/", "").replace("*", "")
         # -------------------------------
         try: 
-            print(sy.eval_(sy.parse(calc)))
+            print(f"{calculator.eval_(calculator.parse(calc))}\n")
         except:
-            print("sy cannot evaluate this expression.")
+            print("Cannot evaluate this expression.\n")
         
-        n = session.prompt("sy) ")
+        n = session.prompt("> ")
 
 
 # ------------------

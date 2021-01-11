@@ -42,7 +42,7 @@ eval_(parse(l_calc))
 
 ### Commands
 - [ ] [Exit program](#exit)
-- [ ] [calculator history](#history)
+- [ ] [Calculator history](#history)
 - [ ] [Clear Input](#clear)
 
 ---
@@ -52,7 +52,7 @@ eval_(parse(l_calc))
 
 **Addition**
 ```
-sy) 5+7+4
+> 5+7+4
 16
 ```
 </div>
@@ -63,7 +63,7 @@ sy) 5+7+4
 
 **Substraction**
 ```
-sy) 10-20-40
+> 10-20-40
 -50
 ```
 </div>
@@ -74,7 +74,7 @@ sy) 10-20-40
 
 **Multiplication**
 ```
-sy) 5*2*3
+> 5*2*3
 30
 ```
 </div>
@@ -85,7 +85,7 @@ sy) 5*2*3
 
 **Division**
 ```
-sy) 100/10
+> 100/10
 10.0
 ```
 </div>
@@ -96,19 +96,19 @@ sy) 100/10
 
 **Squared**
 ```
-sy) 5^2
+> 5^2
 25
 ```
 
 **Cubed**
 ```
-sy) 10^3
+> 10^3
 1000
 ```
 
 **Root square**
 ```
-sy) 25^0.5
+> 25^0.5
 5.0
 ```
 
@@ -120,7 +120,7 @@ sy) 25^0.5
 
 **Mixed**
 ```
-sy) (5+5*2/4-2)^2
+> (5+5*2/4-2)^2
 30.25
 ```
 </div>
@@ -133,7 +133,7 @@ sy) (5+5*2/4-2)^2
 
 To exit the program.
 ```
-sy) quit
+> quit
 ```
 
 </div>
@@ -144,22 +144,28 @@ sy) quit
 
 Go back to an old calculus with up arrow key.
 ```
-sy) (10+3)*2
+> (10+3)*2
 26
-sy) 6*2+3
+
+> 6*2+3
 15
-sy) 6*2+3 (up arrow key)
+
+> 6*2+3 (up arrow key)
 ```
 
 Or go back to a recent calculus with bottom arrow key.
 ```
-sy) (10+3)*2
+> (10+3)*2
 26
-sy) 6*2+3
+
+> 6*2+3
 15
-sy) 6*2+3     (up arrow key)
-sy) (10+3)*2  (up arrow key)
-sy) 6*2+3     (bottom arrow key)
+
+> 6*2+3     (up arrow key)
+
+> (10+3)*2  (up arrow key)
+
+> 6*2+3     (bottom arrow key)
 ```
 
 </div>
@@ -170,15 +176,16 @@ sy) 6*2+3     (bottom arrow key)
 You can clear input with CTRL+L key.
 
 ```
-sy) (10+3)*2
+> (10+3)*2
 26
-sy) 6*2+3
+
+> 6*2+3
 15
 ```
 
 (With CTRL+L)
 ```
-sy)
+>
 ```
 
 
