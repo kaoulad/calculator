@@ -1,4 +1,4 @@
-# sy
+# calculator
 
 Basic calculator written in Python using Shunting-yard algorithm.
 
@@ -42,7 +42,7 @@ eval_(parse(l_calc))
 
 ### Commands
 - [ ] [Exit program](#exit)
-- [ ] [sy history](#history)
+- [ ] [calculator history](#history)
 - [ ] [Clear Input](#clear)
 
 ---
