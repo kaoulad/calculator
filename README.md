@@ -33,17 +33,17 @@ eval_(parse(l_calc))
 
 # Features
 ### Operations
-- [ ] [Addition](#addition)
-- [ ] [Substraction](#substraction)
-- [ ] [Multiplication](#multiplication)
-- [ ] [Division](#division)
-- [ ] [Power](#power)
-- [ ] [Mixed](#mixed)
+- [Addition](#addition)
+- [Substraction](#substraction)
+- [Multiplication](#multiplication)
+- [Division](#division)
+- [Power](#power)
+- [Mixed](#mixed)
 
 ### Commands
-- [ ] [Exit program](#exit)
-- [ ] [Calculator history](#history)
-- [ ] [Clear Input](#clear)
+- [Exit program](#exit)
+- [Calculator history](#history)
+- [Clear Input](#clear)
 
 ---
 
